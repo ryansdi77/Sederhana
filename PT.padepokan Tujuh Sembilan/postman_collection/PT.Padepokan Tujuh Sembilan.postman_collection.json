@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "c813cc78-32e9-4942-bb7f-1f7a3ff15508",
+		"name": "PT.Padepokan Tujuh Sembilan",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all nasabah",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/nasabah",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"nasabah"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Input data nasabah",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Customer6\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/nasabah",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"nasabah"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all transaksi",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/transaksi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"transaksi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Input transaksi",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"accountId\": 2,\r\n        \"transactionDate\": \"2017-01-02 00:00:00.0\",\r\n        \"description\": \"Setor Tunai\",\r\n        \"status\": \"C\",\r\n        \"amount\": 200000.0000\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/transaksi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"transaksi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Report Cetak Buku",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"accountId\":\"1\",\r\n    \"startDate\":\"01/01/2017\",\r\n    \"endDate\":\"15/03/2017\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/reportCetakBuku",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"reportCetakBuku"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

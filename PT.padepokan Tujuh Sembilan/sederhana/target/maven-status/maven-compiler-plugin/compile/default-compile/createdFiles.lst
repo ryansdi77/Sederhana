@@ -1,0 +1,7 @@
+com\bank\sederhana\model\Transaksi.class
+com\bank\sederhana\repository\NasabahRepository.class
+com\bank\sederhana\SederhanaApplication.class
+com\bank\sederhana\controller\TransaksiController.class
+com\bank\sederhana\model\Nasabah.class
+com\bank\sederhana\controller\NasabahController.class
+com\bank\sederhana\repository\TransaksiRepository.class
